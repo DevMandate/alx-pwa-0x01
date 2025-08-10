@@ -45,16 +45,16 @@ Edit
 ## Authentication
 - TMDb requires authentication via an API key or Bearer token, which you obtain by signing up for a TMDb account and requesting an API key via the user settings section 
 
-- Include it either via:
-**Query parameter: ?api_key=YOUR_API_KEY**
-**HTTP header: Authorization: Bearer YOUR_ACCESS_TOKEN**  
+- Include it either via: 
+- **Query parameter: ?api_key=YOUR_API_KEY**
+- **HTTP header: Authorization: Bearer YOUR_ACCESS_TOKEN**  
 
 
 ## Error Handling
 - Common HTTP status codes:
-**401 Unauthorized** – Invalid or missing API key.
-**404 Not Found** – Resource doesn't exist.
-**400 Bad Request** – Invalid parameters (e.g., rating value out of bounds).
+- **401 Unauthorized** – Invalid or missing API key.
+- **404 Not Found** – Resource doesn't exist.
+- **400 Bad Request** – Invalid parameters (e.g., rating value out of bounds).
 
 - TMDb also provides status_code and status_message fields in the JSON response for granular error handling.
 
@@ -63,5 +63,5 @@ Edit
 Zuplo.
 - Always use HTTPS to secure your API calls.
 - Use configuration endpoint instead of hardcoding paths for images and other static resources.
-- Prefer **GET** for retrieval, **POST** for creating or rating, and **DELETE** for deletion; be aware that TMDb may reuse **POST** for updates (e.g., rating updates) 
+- Prefer *GET* for retrieval, *POST* for creating or rating, and *DELETE* for deletion; be aware that TMDb may reuse *POST* for updates (e.g., rating updates) 
 Launch School.
